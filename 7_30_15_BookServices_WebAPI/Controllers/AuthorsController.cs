@@ -17,13 +17,17 @@ namespace _7_30_15_BookServices_WebAPI.Controllers
     {
         private _7_30_15_BookServices_WebAPIContext db = new _7_30_15_BookServices_WebAPIContext();
 
-        // GET: api/Authors
+        /// <summary>
+        /// Get all authors.
+        /// </summary>
         public IQueryable<Author> GetAuthors()
         {
             return db.Authors;
         }
 
-        // GET: api/Authors/5
+        /// <summary>
+        /// Get an author by ID
+        /// </summary>
         [ResponseType(typeof(Author))]
         public async Task<IHttpActionResult> GetAuthor(int id)
         {
@@ -36,7 +40,9 @@ namespace _7_30_15_BookServices_WebAPI.Controllers
             return Ok(author);
         }
 
-        // PUT: api/Authors/5
+        /// <summary>
+        /// Create a new author
+        /// </summary>
         [ResponseType(typeof(void))]
         public async Task<IHttpActionResult> PutAuthor(int id, Author author)
         {
@@ -70,8 +76,9 @@ namespace _7_30_15_BookServices_WebAPI.Controllers
 
             return StatusCode(HttpStatusCode.NoContent);
         }
-
-        // POST: api/Authors
+        /// <summary>
+        /// Update an existing author
+        /// </summary>
         [ResponseType(typeof(Author))]
         public async Task<IHttpActionResult> PostAuthor(Author author)
         {
@@ -86,7 +93,9 @@ namespace _7_30_15_BookServices_WebAPI.Controllers
             return CreatedAtRoute("DefaultApi", new { id = author.Id }, author);
         }
 
-        // DELETE: api/Authors/5
+        /// <summary>
+        /// Delete an author
+        /// </summary>
         [ResponseType(typeof(Author))]
         public async Task<IHttpActionResult> DeleteAuthor(int id)
         {

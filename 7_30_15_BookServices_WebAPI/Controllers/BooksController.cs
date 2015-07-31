@@ -17,13 +17,17 @@ namespace _7_30_15_BookServices_WebAPI.Controllers
     {
         private _7_30_15_BookServices_WebAPIContext db = new _7_30_15_BookServices_WebAPIContext();
 
-        // GET: api/Books
+        /// <summary>
+        /// Get all books.
+        /// </summary>
         public IQueryable<Book> GetBooks()
         {
             return db.Books;
         }
 
-        // GET: api/Books/5
+        /// <summary>
+        /// Get a book by ID.
+        /// </summary>
         [ResponseType(typeof(Book))]
         public async Task<IHttpActionResult> GetBook(int id)
         {
@@ -36,7 +40,9 @@ namespace _7_30_15_BookServices_WebAPI.Controllers
             return Ok(book);
         }
 
-        // PUT: api/Books/5
+        /// <summary>
+        /// Create a new book.
+        /// </summary>
         [ResponseType(typeof(void))]
         public async Task<IHttpActionResult> PutBook(int id, Book book)
         {
@@ -71,7 +77,9 @@ namespace _7_30_15_BookServices_WebAPI.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
-        // POST: api/Books
+        /// <summary>
+        /// Update an existing book.
+        /// </summary>
         [ResponseType(typeof(Book))]
         public async Task<IHttpActionResult> PostBook(Book book)
         {
@@ -86,7 +94,9 @@ namespace _7_30_15_BookServices_WebAPI.Controllers
             return CreatedAtRoute("DefaultApi", new { id = book.Id }, book);
         }
 
-        // DELETE: api/Books/5
+        /// <summary>
+        /// Delete a book.
+        /// </summary>
         [ResponseType(typeof(Book))]
         public async Task<IHttpActionResult> DeleteBook(int id)
         {

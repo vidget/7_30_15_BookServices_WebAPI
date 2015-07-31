@@ -22,9 +22,9 @@ namespace _7_30_15_BookServices_WebAPI.Areas.HelpPage
         private const string ParameterExpression = "param[@name='{0}']";
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="XmlDocumentationProvider"/> class.
+      //  /// Initializes a new instance of the <see cref="XmlDocumentationProvider"/> class.
         /// </summary>
-        /// <param name="documentPath">The physical path to XML document.</param>
+    //    /// <param name="documentPath">The physical path to XML document.</param>
         public XmlDocumentationProvider(string documentPath)
         {
             if (documentPath == null)
