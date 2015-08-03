@@ -488,12 +488,12 @@
         </member>
         <member name="M:_7_30_15_BookServices_WebAPI.Controllers.AuthorsController.PutAuthor(System.Int32,_7_30_15_BookServices_WebAPI.Models.Author)">
             <summary>
-            Create a new author
+            Update an existing author
             </summary>
         </member>
         <member name="M:_7_30_15_BookServices_WebAPI.Controllers.AuthorsController.PostAuthor(_7_30_15_BookServices_WebAPI.Models.Author)">
             <summary>
-            Update an existing author
+            Create a new author
             </summary>
         </member>
         <member name="M:_7_30_15_BookServices_WebAPI.Controllers.AuthorsController.DeleteAuthor(System.Int32)">
@@ -506,19 +506,14 @@
             Get all books.
             </summary>
         </member>
-        <member name="M:_7_30_15_BookServices_WebAPI.Controllers.BooksController.GetBook(System.Int32)">
-            <summary>
-            Get a book by ID.
-            </summary>
-        </member>
         <member name="M:_7_30_15_BookServices_WebAPI.Controllers.BooksController.PutBook(System.Int32,_7_30_15_BookServices_WebAPI.Models.Book)">
             <summary>
-            Create a new book.
+            Update an existing book.
             </summary>
         </member>
         <member name="M:_7_30_15_BookServices_WebAPI.Controllers.BooksController.PostBook(_7_30_15_BookServices_WebAPI.Models.Book)">
             <summary>
-            Update an existing book.
+            Create a new book.
             </summary>
         </member>
         <member name="M:_7_30_15_BookServices_WebAPI.Controllers.BooksController.DeleteBook(System.Int32)">

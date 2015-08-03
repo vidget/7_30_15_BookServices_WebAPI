@@ -17,6 +17,8 @@ namespace _7_30_15_BookServices_WebAPI.Models
     
         public _7_30_15_BookServices_WebAPIContext() : base("name=_7_30_15_BookServices_WebAPIContext")
         {
+            // New code:
+            this.Database.Log = s => System.Diagnostics.Debug.WriteLine(s);
         }
 
         public System.Data.Entity.DbSet<_7_30_15_BookServices_WebAPI.Models.Author> Authors { get; set; }

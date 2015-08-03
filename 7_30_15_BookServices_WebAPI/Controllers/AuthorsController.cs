@@ -39,10 +39,12 @@ namespace _7_30_15_BookServices_WebAPI.Controllers
 
             return Ok(author);
         }
-
         /// <summary>
-        /// Create a new author
+        /// Update an existing author
         /// </summary>
+
+
+       
         [ResponseType(typeof(void))]
         public async Task<IHttpActionResult> PutAuthor(int id, Author author)
         {
@@ -76,9 +78,11 @@ namespace _7_30_15_BookServices_WebAPI.Controllers
 
             return StatusCode(HttpStatusCode.NoContent);
         }
+
         /// <summary>
-        /// Update an existing author
+        /// Create a new author
         /// </summary>
+      
         [ResponseType(typeof(Author))]
         public async Task<IHttpActionResult> PostAuthor(Author author)
         {
